@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Razvii_pt17</string>
+    <string name="photo">Photo</string>
+    <string name="photo_background">Photo background</string>
+    <string name="transition_name_photo">transition_photo</string>
+    <string name="transition_name_name">transition_name</string>
 </resources>

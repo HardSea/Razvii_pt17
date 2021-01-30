@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photo_square_size">150dp</dimen>
+    <dimen name="margin_bottom_photo">32dp</dimen>
+    <dimen name="text_size_information_screen">20sp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="padding_item_rv_information">16dp</dimen>
+    <dimen name="small_photo_square_size">46dp</dimen>
+    <dimen name="small_margin_photo">8dp</dimen>
+    <dimen name="margin_start_item_rv">16dp</dimen>
+    <dimen name="text_size_rv_information_item">16sp</dimen>
+    <dimen name="text_size_rv_list_item">16sp</dimen>
+</resources>

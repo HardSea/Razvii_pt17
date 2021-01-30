@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformationPeopleActivity">
+
+    <ImageView
+        android:id="@+id/iv_photo_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/photo_background"
+        android:scaleType="center"
+        android:src="@drawable/background_photo"
+        app:layout_constraintBottom_toTopOf="@id/rv_list_information"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="@dimen/photo_square_size"
+        android:layout_height="@dimen/photo_square_size"
+        android:layout_marginBottom="@dimen/margin_bottom_photo"
+        android:contentDescription="@string/photo"
+        android:transitionName="@string/transition_name_photo"
+        app:layout_constraintBottom_toBottomOf="@id/iv_photo_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@drawable/ic_people_1" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_information_screen"
+        android:transitionName="@string/transition_name_name"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_photo"
+        app:layout_constraintLeft_toRightOf="@id/iv_photo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_photo"
+        tools:text="Example Name" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layoutAnimation="@anim/rv_layout_animation"
+        android:id="@+id/rv_list_information"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_photo_background"
+        tools:itemCount="4"
+        tools:listitem="@layout/rv_information_list_item" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
